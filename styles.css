@@ -1,0 +1,197 @@
+@import url('https://consultbenchmark.com/wp-content/uploads/2020/08/Benchmark-Logo-08-3.png');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body {
+    background: #111;
+}
+/*header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
+}*/
+
+.nav-wrapper {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 1.0em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.right-side-logo img {
+    width: 9.5em;
+    height: 50%;
+    
+}
+
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+
+.left-side {
+    display: flex;
+    padding-top: 1.5em;
+
+}
+
+.header .left-side  div {
+    margin-right: 50px;
+    font-size: 1.0em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid white;
+    transition: border-bottom 0.5s;
+
+}
+
+.nav-link-wrapper a {
+    color:grey;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+header .logo {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(IMG/Menus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: black;
+
+}
+
+.slider .slides {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0s;
+    z-index: 1;
+    clip-path: circle(0px at center);
+}
+
+
+.slider input[type = "radio"]:checked + .slides {
+    z-index: 10;
+    clip-path: circle(1000px at center);
+    transition-delay: 0.3s;
+}
+.slider .slides img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+    filter:opacity(2px);
+    filter: brightness(3px);
+}
+
+.slider .slides .content {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+
+}
+
+.slider .slides .content h1 {
+    line-height: 1em;
+    color:silver;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+
+}
+
+.slider input[type="radio"] {
+    position: relative;
+    z-index: 1000;
+    margin: 5px;
+    margin-bottom: 40px;
+    outline: none;
+    cursor: pointer;
+
+}
